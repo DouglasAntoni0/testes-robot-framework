@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+.env
+
+# Robot Framework logs
+log.html
+report.html
+output.xml
+results/
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
