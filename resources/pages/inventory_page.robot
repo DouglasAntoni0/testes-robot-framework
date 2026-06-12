@@ -11,7 +11,7 @@ ${CART_LINK}               css=.shopping_cart_link
 
 *** Keywords ***
 Validar Pagina de Produtos
-    Element Should Contain    ${TITLE_INVENTORY}    Products
+    Wait Until Element Contains    ${TITLE_INVENTORY}    Products
 
 Adicionar Mochila ao Carrinho
     Click Element    ${BTN_ADD_BACKPACK}

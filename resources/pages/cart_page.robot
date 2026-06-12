@@ -8,7 +8,7 @@ ${BTN_CHECKOUT}             id=checkout
 
 *** Keywords ***
 Validar Pagina do Carrinho
-    Element Should Contain    ${TITLE_CART}    Your Cart
+    Wait Until Element Contains    ${TITLE_CART}    Your Cart
 
 Validar Mochila no Carrinho
     Page Should Contain Element    ${ITEM_NAME_BACKPACK}
