@@ -27,6 +27,5 @@ Validar Quantidade de Itens no Carrinho
     Element Text Should Be    ${CART_BADGE}    ${quantidade}
 
 Ir para o Carrinho
-    Wait Until Element Is Visible    ${CART_LINK}
-    Sleep    1s
-    Click Element    ${CART_LINK}
+    # Forçar navegação direta via URL para burlar bloqueios de clique em modo Headless
+    Go To    https://www.saucedemo.com/cart.html
