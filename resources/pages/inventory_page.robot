@@ -28,4 +28,5 @@ Validar Quantidade de Itens no Carrinho
 
 Ir para o Carrinho
     Wait Until Element Is Visible    ${CART_LINK}
+    Sleep    1s
     Click Element    ${CART_LINK}
