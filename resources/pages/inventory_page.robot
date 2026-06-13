@@ -27,4 +27,5 @@ Validar Quantidade de Itens no Carrinho
     Element Text Should Be    ${CART_BADGE}    ${quantidade}
 
 Ir para o Carrinho
+    Wait Until Element Is Visible    ${CART_LINK}
     Click Element    ${CART_LINK}

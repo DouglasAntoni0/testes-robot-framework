@@ -19,12 +19,14 @@ Preencher Dados Pessoais
     Input Text    ${INPUT_POSTALCODE}   ${cep}
 
 Clicar em Continuar
+    Wait Until Element Is Visible    ${BTN_CONTINUE}
     Click Element    ${BTN_CONTINUE}
 
 Validar Pagina de Resumo
     Wait Until Element Contains    ${TITLE_CHECKOUT}    Checkout: Overview
 
 Finalizar Compra
+    Wait Until Element Is Visible    ${BTN_FINISH}
     Click Element    ${BTN_FINISH}
 
 Validar Mensagem de Sucesso

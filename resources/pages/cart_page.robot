@@ -14,4 +14,5 @@ Validar Mochila no Carrinho
     Page Should Contain Element    ${ITEM_NAME_BACKPACK}
 
 Ir para Checkout
+    Wait Until Element Is Visible    ${BTN_CHECKOUT}
     Click Element    ${BTN_CHECKOUT}
